@@ -131,3 +131,6 @@ dmypy.json
 # MAC os
 .DS_Store
 web_sample/.DS_Store
+
+# Data foler
+Data/
