@@ -37,7 +37,7 @@ def func5(**kwargs):
 func5(name = 'Sayhoon', age = 26, gender = 'male')
 
 ## 키워드 가변 매개변수 오류나는 방법
-# Syntax Error가 발생함 
+# Syntax Error가 발생함 ㅍ
 # def func6(**kwargs, age , gender):
 #     print(age,gender)
 # func6(name = "Sayhoon", age = 26, gender = 'male')
