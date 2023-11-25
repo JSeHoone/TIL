@@ -4,10 +4,8 @@
 def solution(a, b):
     answer = ''
     
+    ## 목 - 금 - 토 - 일 - 월 - 화 - 수 (순서로 설정함) => index 1번이 1월 1일로 설정 하려고
     day_of_week = ['THU','FRI','SAT','SUN','MON','TUE','WED']
-
-    ## 1월 1일의 시작은 day_of_week의 0번쨰 index    
-    start = 0 
 
     day_dict = {
         '31' : [1,3,5,7,8,10,12],
