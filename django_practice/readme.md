@@ -20,3 +20,28 @@ django 3.0 이상이 되면서 DB column 타입이 다양해짐
 - PK에서 사용되는 타입은 BigAutoField가 되었다고 함 (Auto Incerment) / 원하면 AutoField 사용 가능
 
 ---
+
+Database Modeling
+```python
+from djanggo.db import models
+
+class PayPlan(models.Model):
+    name = models.CharField(max_length = 20)
+```
+modeling 하기 전에 django가 가지고 있는 db를 먼저 만들어줘야 한다. 
+```zsh
+python manage.py migrate
+```
+-> django frame work가 필요로 하는 db 생성
+
+이후 
+```zsh
+python manage.py makemigrations
+```
+makemigration이 안되서 Document를 찾아보니 project folder내 setting.py 안에<br>
+INSTALLED_APP에다가 shortner.apps.Shortnerconfig를 추가해줌 (해결)
+
+이후 migrate 해서 DB를 만들어준다.
+```zsh
+python manage.py migrate
+```
