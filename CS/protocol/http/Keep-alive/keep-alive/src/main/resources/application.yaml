@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: keep-alive
+
+server:
+  tomcat:
+    mbeanregistry:
+      enabled: true
+    threads:
+      max: 10 # 내장 톰켓에서 스레드를 10개만 설정
+
+logging:
+  level:
+    org.apache.coyote.http1: DEBUG
